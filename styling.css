@@ -1,0 +1,636 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Roboto",sans-serif;
+}
+
+p
+{
+    color: gray;
+}
+
+.clearfix
+{
+    clear: both;
+}
+
+img
+{
+    width: 100%;
+}
+
+.bg-white
+{
+    background-color: white;
+}
+
+.bg-gray
+{
+    background-color: #f1f1f1;
+}
+h1, h2, h3, h4
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.maincontainer
+{
+    padding: 50px 75px;
+}
+
+.home
+{
+    background-image: url(img/slider-01.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.black
+{
+    background-color: rgba(0, 0, 0, .8);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.home li
+{
+    float: left;
+    padding: 15px 15px;
+}
+
+.navsection
+{
+    width: 90%;
+    margin: auto;
+}
+
+.navcontainer
+{
+    width: 100%;
+    position: absolute;
+}
+
+.navbar
+{
+    float: right;
+}
+
+.navname
+{
+    float: left;
+}
+
+.navbar ul
+{
+    list-style-type: none;
+}
+.navbar a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.red a
+{
+    color: red;
+}
+
+.navname
+{
+    float: left;
+}
+.navname a
+{
+    color: red;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 10px 20px;
+    display: block;
+}
+
+.center 
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.h1Before
+{
+    margin: 15px 0px;
+    color: white;
+    font-size: 20px;
+}
+
+.h1After
+{
+    margin: 15px 0px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+h1
+{
+    font-size: 70px;
+    color: red;
+}
+
+.profile
+{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.profile-left-container
+{
+    width: 50%;
+    float: left;
+    padding-top: 100px;
+    padding-left: 150px;
+}
+
+.profile-left
+{
+    width: 80%;
+}
+
+.border
+{
+    border: solid 5px black;
+}
+
+.photo
+{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+}
+
+.blind
+{
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    transition-property: top;
+    transition-duration: .4s;
+    transition-timing-function: ease-out;
+}
+
+.blind p
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blind a
+{
+    color: white;
+    font-size: large;
+    margin-right: 15px;
+}
+
+.blind p a:hover
+{
+    color: red;
+}
+.photo:hover .blind
+{
+        top: 0px;
+}
+
+.profile-right-container
+{
+    float: left;
+    width: 50%;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 100px;
+}
+
+.profile-right h2
+{
+    margin-bottom: 20px;
+    padding-left: 13px;
+}
+.profile-right p
+{
+    padding-bottom: 20px;
+    border-bottom: 1px dashed gray;
+    margin-bottom: 20px;
+}
+.profile ul
+{
+    list-style-type: none;
+}
+.profile li
+{
+    color: gray;
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+li span
+{
+    color: black;
+}
+
+.profile .buttons a
+{
+    display: block;
+    float: left;
+    width: fit-content;
+    padding: 15px;
+    margin-right: 12px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(255, 71, 157);
+    color: white;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: .3s;
+
+}
+
+.buttons a:hover
+{
+    background-color: rgb(35, 211, 0);
+}
+
+.row1 h2
+{
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.5;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.row1 h2::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 8px;
+    border-top: red solid 1px;
+    border-bottom: red solid 1px;
+}
+
+.row1 h2::after
+{
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+    height: 1px;
+    background-color: red;
+}
+
+.ourServices .sub4
+{
+    background-color: #f1f1f1;
+    float: left;
+    width: 25%;
+    padding: 30px 10px;
+    transition-duration: .5s;
+    line-height: 1.5;
+}
+
+.icon
+{
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+    font-size: 35px;
+    transition-duration: .5s;
+}
+
+.sub4 h3
+{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.ourServices .sub4:hover
+{
+    background-color: white;
+}
+
+.ourServices .sub4:hover .icon
+{
+    transform: scale(1.2);
+}
+
+.portfolio .row2
+{
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.portfolio .row2 button
+{
+    width: fit-content;
+    padding: 10px 15px;
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+
+.portfolio .row2 button:hover
+{
+    cursor: pointer;
+}
+.product
+{
+    width: 33.3%;
+    padding: 10px;
+    float: left;
+}
+
+.content
+{
+    width: 100%;
+    position: relative;
+}
+
+.content .blind
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(black, .5);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.p-icon
+{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: red;
+    font-size: 20px;
+}
+
+.content:hover .blind
+{
+    opacity: 1;
+}
+
+.sCounter
+{
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.counterIcon
+{
+    font-size: 26px;
+    color: red;
+}
+
+.counterIcon, .counternumber, .counterData
+{
+    margin: 15px 0px;
+}
+
+.counternumber
+{
+    font-size: 30px;
+}
+
+.contentFeed
+{
+    width: 60%;
+    margin: auto;
+    padding: 30px 30px 50px 180px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    line-height: 1.3;
+    border-radius: 5px;
+}
+
+.contentFeed::before
+{
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    /*transform: translateX(-50%);*/
+    /*transform: translateY(-50%);*/
+    transform: rotate(45deg);
+    /*transform-origin: top left;*/
+    width: 200px;
+    padding-top: 200px;
+    /*height: 100px;*/
+    background-color: blue;
+}
+
+.contentFeed::after
+{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    /*transform: translateX(-50%);*/
+    /*transform: translateY(-50%);*/
+    /*transform: rotate(45deg);*/
+    /*transform-origin: top left;*/
+    width: 100px;
+    padding-top: 100px;
+    /*height: 100px;*/
+    background-image: url(img/feedback/1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.bottom12
+{
+    margin-bottom: 12px;
+}
+
+.it 
+{
+    font-style: italic;
+}
+
+.contentFeed a
+{
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.rating
+{
+    color: gold;
+}
+
+.sub3
+{
+    width: 33.3%;
+    float: left;
+    padding: 15px;
+}
+
+.sub3 .content
+{
+    padding: 15px 10px;
+}
+
+.blog .content a
+{
+    text-decoration: none;
+}
+
+.blog .content a:hover
+{
+    color: red;
+}
+
+.media
+{
+    width: 100%;
+    border: none;
+    overflow: hidden;
+}
+
+.video
+{
+    text-align: center;
+}
+
+iframe
+{
+    border: none;
+    height: 164px;
+}
+
+.contactForm
+{
+    width: 65%;
+    margin: auto;
+}
+
+.inputleft
+{
+    float: left;
+    width: 50%;
+    padding-right: 10px;
+}
+
+.inputright
+{
+    float: right;
+    width: 50%;
+    padding-left: 10px;
+}
+
+/*.inputleft, .inputright, .subject, .message
+{
+    
+}*/
+
+.subject, .message
+{
+    width: 100%;
+}
+
+input, textarea
+{
+    width: 100%;
+    border: solid gray 1px;
+    line-height: 1.5;
+    border-radius: 5px;
+    padding: 10px;
+    outline-color:red;
+    outline-width: .5px;
+}
+
+.bottom20
+{
+    margin-bottom: 30px;
+}
+
+.btn-send
+{
+    background-color: rgb(255, 71, 157);
+    color: white;
+    border-radius: 3px;
+    transition-duration: .5s;
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+}
+
+.btn-send:hover
+{
+    background-color: red;
+}
+
+.copyright
+{
+    background-color: #333333;
+}
+
+.copyright p
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.copyright .row1 a
+{
+    color: white;
+    font-size: large;
+    margin-right: 15px;
+}
+
+.copyright .row1 a:hover
+{
+    color: red;
+}
+
+.copyright .row2 a
+{
+    color: red;
+    text-decoration: none;
+}
+
+.copyright .row2 a:hover
+{
+    text-decoration: underline;
+}
